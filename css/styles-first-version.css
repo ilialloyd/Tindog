@@ -1,36 +1,75 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 /* font-weight: 600; for bold
 
 font-weight: 900; for black */
 
 
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+#title {
+    background-color: #ff4c68;
+    color: white;
 }
 
-h1, h2, h3, h4 {
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+
+h1 {
     font-family: "Montserrat";
-  
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    /* padding-top: 120px; --- instead we give bottom padding to  navbar */
 }
+
+
+h2 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 
 p {
     color: #8f8f8f
 }
 
-/* Container Fluid */
-.container-fluid {
-    padding: 7% 15%;
+/* Hiding phone image behing features' white tackground */
+/* first we should give posiutioning each element and then we change their z-index
+z-index 0 stays its place and z-index 1 will be first that shown us */
+.title-image {
+
+    width: 20%;
+    right: 24%;
+    transform: rotate(25deg);
+    position: absolute;
+    z-index: 0
 }
+
+
+/* .btn{
+    font-family: "Montserrat";
+} */
+
+
 
 
 /* Navigation Bar */
 
-
+/* editing whole nav bar with brand name and items */
 .navbar {
     padding: 0 0 4.5rem;
-    /* editing whole nav bar with brand name and items */
     /* giving padding to navbar better than giving top padding to h1 */
 }
 
@@ -55,42 +94,6 @@ p {
 }
 
 
-
-/* Title section */
-
-#title {
-    background-color: #ff4c68;
-    color: white;
-    text-align: left;
-}
-
-#title .container-fluid{
-padding: 3% 15% 7% ;
-}
-
-.big-heading{
-    font-family: "Montserrat";
-    font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    /* padding-top: 120px; --- instead we give bottom padding to  navbar */
-}
-
-
-/* Hiding phone image behing features' white tackground */
-/* first we should give posiutioning each element and then we change their z-index
-z-index 0 stays its place and z-index 1 will be first that shown us */
-.title-image {
-
-    width: 20%;
-    right: 24%;
-    transform: rotate(25deg);
-    position: absolute;
-    z-index: 0
-}
-
-
-
 /* Download Buttons */
 .download-button {
     margin: 5% 3% 5% 0;
@@ -100,20 +103,15 @@ z-index 0 stays its place and z-index 1 will be first that shown us */
 /* Features section */
 
 #features {
-    /* padding: 7% 15%; */
+    padding: 7% 15%;
     background-color: #fff;
     position: relative;
     z-index: 1;
 }
 
-.feature-title{
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
 /* padding will help us to make text yığcam and looks good */
 .feature-box {
-    /* text-align: center; */
+    text-align: center;
     padding: 5%;
 }
 
@@ -132,7 +130,7 @@ z-index 0 stays its place and z-index 1 will be first that shown us */
 
 #testimonials {
 
-    /* text-align: center; */
+    text-align: center;
     background-color: #ef8172;
     color: #fff;
 
@@ -150,18 +148,16 @@ z-index 0 stays its place and z-index 1 will be first that shown us */
     /* when you declare just one it applies all the sides*/
 }
 
-.testimonial-text{
-    font-weight: 600;
+.carousel-item {
+    padding: 7% 15%;
+    /* centering*/
 
-    font-size: 3rem;
-    line-height: 1.5; 
 }
-
 
 /* Press section */
 #press {
     background-color: #ef8172;
-    /* text-align: center; */
+    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -178,39 +174,40 @@ z-index 0 stays its place and z-index 1 will be first that shown us */
     padding: 100px;
 }
 
-.section-heading{
-    font-weight: 600;
-
-    font-size: 3rem;
-    line-height: 1.5;
-}
-
-.pricing-plan-name{
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
-.price-text{
-    font-weight: 600;
-    font-size: 3rem;
-    line-height: 1.5;
-}
 .pricing-column {
     padding: 3% 2%;
 }
 
 /* Call to Action  */
 
-#cta{   
+#cta{
+   
     background-color: #ff4c68;
     color:#fff;
+   padding: 7% 15%;
+   text-align: center;
+ 
+
+   
 }
+
+.cta-heading{
+    font-family: "Montserrat";
+    font-weight: 900  ;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+
 
 /* Footer Section */
 
 
 #footer{
+    padding: 7% 15%;
+    text-align: center;
     background-color: #fff;
+
 }
 
 .social-icon{
