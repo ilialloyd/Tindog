@@ -1,4 +1,3 @@
-TinDog Starting Files
+TinDog - Tinder for Dogs:
 
-Media QUery
-@media <type> <feature>
+to see Website: https://ilialloyd.github.io/Tindog/
