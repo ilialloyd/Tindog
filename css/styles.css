@@ -25,6 +25,22 @@ p {
 }
 
 
+/* Sections */
+
+.colored-section{
+    background-color: #ff4c68;
+    color: white;
+}
+
+.white-section{
+    background-color: #fff;
+
+}
+
+
+
+
+
 /* Navigation Bar */
 
 
@@ -58,13 +74,8 @@ p {
 
 /* Title section */
 
-#title {
-    background-color: #ff4c68;
-    color: white;
-    text-align: left;
-}
-
 #title .container-fluid{
+    text-align: left;
 padding: 3% 15% 7% ;
 }
 
@@ -101,7 +112,6 @@ z-index 0 stays its place and z-index 1 will be first that shown us */
 
 #features {
     /* padding: 7% 15%; */
-    background-color: #fff;
     position: relative;
     z-index: 1;
 }
@@ -202,15 +212,15 @@ z-index 0 stays its place and z-index 1 will be first that shown us */
 /* Call to Action  */
 
 #cta{   
-    background-color: #ff4c68;
-    color:#fff;
+    /* background-color: #ff4c68;
+    color:#fff; */
 }
 
 /* Footer Section */
 
 
 #footer{
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .social-icon{
